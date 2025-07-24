@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Matrix Exodus</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="game.js"></script>
+</head>
+<body>
+    <div class="matrix-bg">
+        <div class="game-container">
+            <h1>MATRIX EXODUS</h1>
+            
+            <div class="balance">
+                <div class="blue-pills">Синие таблетки: <span id="blueCount">0</span></div>
+                <div class="red-pills">Красные таблетки: <span id="redCount">0</span></div>
+            </div>
+            
+            <div class="slots-game">
+                <div class="slot" id="slot1">?</div>
+                <div class="slot" id="slot2">?</div>
+                <div class="slot" id="slot3">?</div>
+                <button id="playButton" onclick="playGame()">Играть (1 синяя таблетка)</button>
+            </div>
+            
+            <div class="shop">
+                <h2>Магазин Матрицы</h2>
+                <button onclick="buyBluePills(1)">Купить 1 синюю таблетку (10 USDT)</button>
+                <button onclick="buyBluePills(5)">Купить 5 синих таблеток (45 USDT)</button>
+                <button onclick="sellRedPills()">Продать красные таблетки</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
